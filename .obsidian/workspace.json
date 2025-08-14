@@ -11,10 +11,14 @@
             "id": "84de1d474e2f3c1e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": "projects/finance-apps/memory-bank/activeContext.md",
+                "bFile": "projects/finance-apps/memory-bank/activeContext.md",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: activeContext"
             }
           }
         ]
@@ -188,10 +192,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c7c2440be46675db",
+  "active": "84de1d474e2f3c1e",
   "lastOpenFiles": [
-    "projects/finance-apps/memory-bank/progress.md",
+    "projects/finance-apps/memory-bank/domain-model-refactor.md",
     "scratch-pad.md",
+    "projects/finance-apps/canvas/system-architecture.canvas",
+    "projects/finance-apps/canvas/strategy-development.canvas",
+    "projects/finance-apps/canvas/issue-resolution.canvas",
+    "projects/finance-apps/memory-bank/progress.md",
     "Untitled.canvas",
     "meta/setup-guides/custom-instructions-template.md",
     "meta/setup-guides/new-project-setup.md",
@@ -217,15 +225,11 @@
     "meta/project-index.md",
     "templates/universal-workflow/README.md",
     "templates/memory-bank-templates/dashboard.md",
-    "templates/memory-bank-templates/activeContext.md",
     "templates/memory-bank-templates",
     "templates/project-setup",
     "meta/vault-projects",
-    "projects/finance-apps/canvas/issue-resolution.canvas",
     "meta/setup-guides",
     "templates/workflow-templates",
-    "projects/finance-apps/canvas/strategy-development.canvas",
-    "projects/finance-apps/canvas/system-architecture.canvas",
     "projects/finance-apps/canvas",
     "projects/finance-apps/memory-bank",
     "projects/finance-apps",

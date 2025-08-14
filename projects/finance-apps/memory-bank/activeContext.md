@@ -15,6 +15,31 @@ related-projects: []
 
 # Active Development Context - Markbot Command Center Implementation
 
+## 🚨 **CRITICAL PRIORITY: Domain Model Architecture Refactor**
+
+**Status**: Analysis Complete | **Priority**: Critical | **Workstream**: Infrastructure
+
+### **Problem Identified**
+Comprehensive analysis reveals our domain models are scattered across **3 incompatible layers**:
+- **40+ Python Pydantic models** (complete SnapTrade API coverage)
+- **2 SQLAlchemy ORM models** (95% of entities missing from cache)
+- **6 TypeScript interfaces** (manual sync, field mismatches)
+
+**Impact**: Performance degradation, development friction, scalability concerns
+
+### **Solution Strategy**
+**Unified Architecture Approach**:
+1. **Schema-First Design**: Single YAML source of truth for all 40+ entities
+2. **Intelligent Cache Layer**: SQLite with TTL, smart sync, and batch operations
+3. **Code Generation Pipeline**: Auto-generate TypeScript, SQLAlchemy, and API models
+4. **Migration Strategy**: Gradual rollout with fallback mechanisms
+
+**Expected Benefits**: 10x performance improvement, eliminated manual sync, enterprise scalability
+
+📋 **Detailed Analysis**: [[domain-model-refactor]]
+
+---
+
 ## Current Status: August 13, 2025 - Advanced Trading Platform Operations
 
 ### 🎯 **LATEST ACHIEVEMENT: Advanced Performance Metrics & UX Enhancement Complete**
