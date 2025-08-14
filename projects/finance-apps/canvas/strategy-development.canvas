@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"strategy-conception","type":"text","text":"# 💡 Strategy Conception\n\n**Ideas & Research**\n- Market analysis\n- Technical indicators\n- Literature review\n- Hypothesis formation\n\n**Documentation:**\n- [[templates/feature-development]]\n- Requirements gathering\n- Success criteria definition","x":-600,"y":-300,"width":250,"height":300,"color":"1"},
+		{"id":"strategy-design","type":"text","text":"# 🏗️ Strategy Design\n\n**Architecture Planning**\n- Signal generation logic\n- Entry/exit conditions\n- Risk management rules\n- Parameter identification\n\n**Design Patterns:**\n- [[systemPatterns#Strategy Pattern]]\n- Base strategy interface\n- Concrete implementations","x":-300,"y":-300,"width":250,"height":300,"color":"2"},
+		{"id":"implementation","type":"text","text":"# ⚙️ Implementation\n\n**Code Development**\n- Strategy class creation\n- Signal generation methods\n- Parameter validation\n- Error handling\n\n**Location:**\n- `markbot/domain/strategies/`\n- Unit test creation\n- Code review process","x":-600,"y":50,"width":250,"height":300,"color":"3"},
+		{"id":"backtesting","type":"text","text":"# 📊 Backtesting\n\n**Historical Validation**\n- VectorBT engine testing\n- Historical data analysis\n- Performance metrics\n- Risk assessment\n\n**Key Metrics:**\n- Sharpe ratio\n- Maximum drawdown\n- Win rate\n- Return analysis","x":-300,"y":50,"width":250,"height":300,"color":"4"},
+		{"id":"optimization","type":"text","text":"# 🎯 Optimization\n\n**Parameter Tuning**\n- Optuna integration\n- Hyperparameter search\n- Cross-validation\n- Overfitting prevention\n\n**Optimization Types:**\n- Sharpe ratio maximization\n- Return optimization\n- Risk-adjusted metrics\n- Multi-objective optimization","x":-600,"y":400,"width":250,"height":300,"color":"5"},
+		{"id":"validation","type":"text","text":"# ✅ Validation\n\n**Strategy Verification**\n- Out-of-sample testing\n- Walk-forward analysis\n- Statistical significance\n- Robustness testing\n\n**Quality Gates:**\n- Performance thresholds\n- Risk limits\n- Consistency checks\n- Peer review","x":-300,"y":400,"width":250,"height":300,"color":"6"},
+		{"id":"paper-trading","type":"text","text":"# 📝 Paper Trading\n\n**Live Simulation**\n- Real market conditions\n- Live data feeds\n- No actual money\n- Performance monitoring\n\n**Validation Period:**\n- Minimum 30 days\n- Various market conditions\n- System stability testing\n- Alert system testing","x":50,"y":-300,"width":250,"height":300,"color":"1"},
+		{"id":"live-deployment","type":"text","text":"# 🚀 Live Deployment\n\n**Production Trading**\n- Real money allocation\n- Risk management active\n- Continuous monitoring\n- Performance tracking\n\n**Deployment Checklist:**\n- Risk limits configured\n- Monitoring alerts active\n- Backup procedures tested\n- Manual override available","x":50,"y":50,"width":250,"height":300,"color":"2"},
+		{"id":"monitoring","type":"text","text":"# 📈 Monitoring & Maintenance\n\n**Ongoing Management**\n- Performance tracking\n- Risk monitoring\n- Market condition analysis\n- Strategy adaptation\n\n**Key Activities:**\n- Daily P&L review\n- Risk metric monitoring\n- Strategy comparison\n- Market regime detection","x":50,"y":400,"width":250,"height":300,"color":"3"},
+		{"id":"feedback-loop","type":"text","text":"# 🔄 Continuous Improvement\n\n**Learning & Adaptation**\n- Performance analysis\n- Strategy refinement\n- New idea generation\n- Knowledge sharing\n\n**Improvement Areas:**\n- Parameter updates\n- Signal enhancement\n- Risk management\n- Technology upgrades","x":-150,"y":750,"width":300,"height":250,"color":"4"}
+	],
+	"edges":[
+		{"id":"edge1","fromNode":"strategy-conception","fromSide":"right","toNode":"strategy-design","toSide":"left","label":"Requirements"},
+		{"id":"edge2","fromNode":"strategy-conception","fromSide":"bottom","toNode":"implementation","toSide":"top","label":"Specifications"},
+		{"id":"edge3","fromNode":"strategy-design","fromSide":"bottom","toNode":"backtesting","toSide":"top","label":"Architecture"},
+		{"id":"edge4","fromNode":"implementation","fromSide":"right","toNode":"backtesting","toSide":"left","label":"Strategy Code"},
+		{"id":"edge5","fromNode":"implementation","fromSide":"bottom","toNode":"optimization","toSide":"top","label":"Base Implementation"},
+		{"id":"edge6","fromNode":"backtesting","fromSide":"bottom","toNode":"validation","toSide":"top","label":"Test Results"},
+		{"id":"edge7","fromNode":"optimization","fromSide":"right","toNode":"validation","toSide":"left","label":"Optimized Parameters"},
+		{"id":"edge8","fromNode":"strategy-design","fromSide":"right","toNode":"paper-trading","toSide":"left","label":"Validated Strategy"},
+		{"id":"edge9","fromNode":"validation","fromSide":"right","toNode":"paper-trading","toSide":"bottom","label":"Approved for Testing"},
+		{"id":"edge10","fromNode":"paper-trading","fromSide":"bottom","toNode":"live-deployment","toSide":"top","label":"Paper Trading Success"},
+		{"id":"edge11","fromNode":"live-deployment","fromSide":"bottom","toNode":"monitoring","toSide":"top","label":"Live Trading"},
+		{"id":"edge12","fromNode":"monitoring","fromSide":"bottom","toNode":"feedback-loop","toSide":"right","label":"Performance Data"},
+		{"id":"edge13","fromNode":"feedback-loop","fromSide":"left","toNode":"strategy-conception","toSide":"bottom","label":"Improvements & New Ideas","color":"red"}
+	]
+}

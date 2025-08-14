@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"issue-discovery","type":"text","text":"# 🚨 Issue Discovery\n\n**Problem Identification**\n- User reports\n- System monitoring\n- Automated alerts\n- Code review findings\n\n**Initial Assessment:**\n- Severity classification\n- Impact analysis\n- Urgency determination\n- Resource allocation","x":-400,"y":-400,"width":250,"height":300,"color":"1"},
+		{"id":"information-gathering","type":"text","text":"# 🔍 Information Gathering\n\n**Data Collection**\n- Error logs analysis\n- System state capture\n- User behavior tracking\n- Performance metrics\n\n**Documentation:**\n- [[templates/bug-investigation]]\n- Reproduction steps\n- Environment details\n- Timeline reconstruction","x":-100,"y":-400,"width":250,"height":300,"color":"2"},
+		{"id":"problem-analysis","type":"text","text":"# 🧠 Problem Analysis\n\n**Root Cause Investigation**\n- Code review\n- Data flow analysis\n- Dependency checking\n- Configuration review\n\n**Analysis Techniques:**\n- 5 Whys methodology\n- Fishbone diagrams\n- Timeline analysis\n- Pattern recognition","x":200,"y":-400,"width":250,"height":300,"color":"3"},
+		{"id":"hypothesis-formation","type":"text","text":"# 💡 Hypothesis Formation\n\n**Theory Development**\n- Potential causes list\n- Probability assessment\n- Impact evaluation\n- Testing strategy\n\n**Hypothesis Validation:**\n- Testable predictions\n- Evidence requirements\n- Risk assessment\n- Resource planning","x":-400,"y":-50,"width":250,"height":300,"color":"4"},
+		{"id":"testing-validation","type":"text","text":"# 🧪 Testing & Validation\n\n**Hypothesis Testing**\n- Controlled experiments\n- A/B testing\n- Simulation runs\n- Edge case testing\n\n**Validation Methods:**\n- Unit test creation\n- Integration testing\n- Performance testing\n- User acceptance testing","x":-100,"y":-50,"width":250,"height":300,"color":"5"},
+		{"id":"solution-design","type":"text","text":"# 🏗️ Solution Design\n\n**Fix Architecture**\n- Code changes design\n- Configuration updates\n- Data migration plans\n- Rollback strategies\n\n**Design Considerations:**\n- Minimal risk approach\n- Performance impact\n- Scalability factors\n- Maintainability","x":200,"y":-50,"width":250,"height":300,"color":"6"},
+		{"id":"implementation","type":"text","text":"# ⚙️ Implementation\n\n**Fix Development**\n- Code implementation\n- Configuration changes\n- Database updates\n- Documentation updates\n\n**Quality Assurance:**\n- Code review process\n- Testing execution\n- Performance validation\n- Security review","x":-400,"y":300,"width":250,"height":300,"color":"1"},
+		{"id":"deployment","type":"text","text":"# 🚀 Deployment\n\n**Release Management**\n- Staging deployment\n- Production rollout\n- Monitoring setup\n- Rollback readiness\n\n**Deployment Strategy:**\n- Blue-green deployment\n- Canary releases\n- Feature flags\n- Gradual rollout","x":-100,"y":300,"width":250,"height":300,"color":"2"},
+		{"id":"verification","type":"text","text":"# ✅ Verification\n\n**Fix Validation**\n- Issue reproduction testing\n- Performance monitoring\n- User feedback collection\n- System stability check\n\n**Success Criteria:**\n- Zero recurrence\n- Performance targets met\n- User satisfaction\n- System reliability","x":200,"y":300,"width":250,"height":300,"color":"3"},
+		{"id":"documentation","type":"text","text":"# 📝 Documentation & Learning\n\n**Knowledge Capture**\n- Issue documentation\n- Solution recording\n- Lessons learned\n- Process improvements\n\n**Knowledge Sharing:**\n- Team briefings\n- Documentation updates\n- Training materials\n- Best practices update","x":-100,"y":650,"width":250,"height":300,"color":"4"},
+		{"id":"prevention","type":"text","text":"# 🛡️ Prevention Measures\n\n**Future Prevention**\n- Process improvements\n- Code quality gates\n- Monitoring enhancements\n- Training programs\n\n**Systematic Improvements:**\n- Automated testing\n- Code review standards\n- Deployment procedures\n- Monitoring alerts","x":200,"y":650,"width":250,"height":300,"color":"5"},
+		{"id":"monitoring","type":"text","text":"# 📊 Post-Resolution Monitoring\n\n**Ongoing Vigilance**\n- Performance tracking\n- Error rate monitoring\n- User experience metrics\n- System health checks\n\n**Alert Systems:**\n- Automated monitoring\n- Threshold alerts\n- Trend analysis\n- Proactive notifications","x":-400,"y":650,"width":250,"height":300,"color":"6"}
+	],
+	"edges":[
+		{"id":"edge1","fromNode":"issue-discovery","fromSide":"right","toNode":"information-gathering","toSide":"left","label":"Issue Reported"},
+		{"id":"edge2","fromNode":"information-gathering","fromSide":"right","toNode":"problem-analysis","toSide":"left","label":"Data Collected"},
+		{"id":"edge3","fromNode":"information-gathering","fromSide":"bottom","toNode":"hypothesis-formation","toSide":"top","label":"Evidence"},
+		{"id":"edge4","fromNode":"problem-analysis","fromSide":"bottom","toNode":"testing-validation","toSide":"top","label":"Analysis Results"},
+		{"id":"edge5","fromNode":"hypothesis-formation","fromSide":"right","toNode":"testing-validation","toSide":"left","label":"Hypotheses"},
+		{"id":"edge6","fromNode":"testing-validation","fromSide":"right","toNode":"solution-design","toSide":"left","label":"Validated Solution"},
+		{"id":"edge7","fromNode":"hypothesis-formation","fromSide":"bottom","toNode":"implementation","toSide":"top","label":"Confirmed Approach"},
+		{"id":"edge8","fromNode":"solution-design","fromSide":"bottom","toNode":"deployment","toSide":"top","label":"Implementation Plan"},
+		{"id":"edge9","fromNode":"implementation","fromSide":"right","toNode":"deployment","toSide":"left","label":"Completed Fix"},
+		{"id":"edge10","fromNode":"deployment","fromSide":"right","toNode":"verification","toSide":"left","label":"Deployed Solution"},
+		{"id":"edge11","fromNode":"deployment","fromSide":"bottom","toNode":"documentation","toSide":"top","label":"Process Documentation"},
+		{"id":"edge12","fromNode":"verification","fromSide":"bottom","toNode":"prevention","toSide":"top","label":"Verified Fix"},
+		{"id":"edge13","fromNode":"verification","fromSide":"bottom","toNode":"monitoring","toSide":"top","label":"Ongoing Monitoring"},
+		{"id":"edge14","fromNode":"documentation","fromSide":"left","toNode":"monitoring","toSide":"right","label":"Knowledge Base"},
+		{"id":"edge15","fromNode":"monitoring","fromSide":"top","toNode":"issue-discovery","toSide":"bottom","label":"New Issues Detected","color":"red"}
+	]
+}

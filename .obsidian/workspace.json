@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "36f3b74cab0e9429",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ec5fef517071f9a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84de1d474e2f3c1e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "98b1c414e7cbd99d",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fb585d5457f98a2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63060c51db60ee00",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "15477bd7208075d1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "842fcef72c2f21ee",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 306.5
+  },
+  "right": {
+    "id": "644b7166eafa4c54",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d8973efdb2211a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e5acd2e3303257f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "cline-memory-banks/finance-apps/dashboard.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for dashboard"
+            }
+          },
+          {
+            "id": "9c4860e28057aaf5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "cline-memory-banks/finance-apps/workflow-guide.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from workflow-guide"
+            }
+          },
+          {
+            "id": "67ee2dce2b4253c2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "dbfeb917712145c7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "cline-memory-banks/finance-apps/workflow-guide.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of workflow-guide"
+            }
+          },
+          {
+            "id": "c7c2440be46675db",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "5535b58a4c5678f3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "graph:Open graph view": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "c7c2440be46675db",
+  "lastOpenFiles": [
+    "projects/finance-apps/memory-bank/progress.md",
+    "scratch-pad.md",
+    "Untitled.canvas",
+    "meta/setup-guides/custom-instructions-template.md",
+    "meta/setup-guides/new-project-setup.md",
+    "projects/finance-apps/memory-bank/techContext.md",
+    "projects/finance-apps/memory-bank/dashboard.md",
+    "projects/finance-apps/memory-bank/activeContext.md",
+    "README.md",
+    "meta/setup-guides/obsidian-requirements.md",
+    "projects/finance-apps/memory-bank/workflow-guide.md",
+    "templates/memory-bank/workflow-guide.md",
+    "templates/memory-bank/techContext.md",
+    "templates/memory-bank/dashboard.md",
+    "templates/memory-bank/activeContext.md",
+    "meta/vault-overview.md",
+    "meta/vault-projects/obsidian-workflow-enhancement.md",
+    "templates/memory-bank/productContext.md",
+    "templates/memory-bank/progress.md",
+    "templates/memory-bank/projectbrief.md",
+    "templates/memory-bank/systemPatterns.md",
+    "projects/finance-apps/memory-bank/productContext.md",
+    "templates/memory-bank",
+    "templates/project-setup/new-project-initialization.md",
+    "meta/project-index.md",
+    "templates/universal-workflow/README.md",
+    "templates/memory-bank-templates/dashboard.md",
+    "templates/memory-bank-templates/activeContext.md",
+    "templates/memory-bank-templates",
+    "templates/project-setup",
+    "meta/vault-projects",
+    "projects/finance-apps/canvas/issue-resolution.canvas",
+    "meta/setup-guides",
+    "templates/workflow-templates",
+    "projects/finance-apps/canvas/strategy-development.canvas",
+    "projects/finance-apps/canvas/system-architecture.canvas",
+    "projects/finance-apps/canvas",
+    "projects/finance-apps/memory-bank",
+    "projects/finance-apps",
+    "meta",
+    "canvas/issue-resolution.canvas",
+    "canvas/system-architecture.canvas",
+    "canvas/strategy-development.canvas"
+  ]
+}
