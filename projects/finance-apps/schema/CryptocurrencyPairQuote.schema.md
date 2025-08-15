@@ -1,0 +1,99 @@
+---
+tags: [schema, domain, auto-generated]
+project: finance-apps
+type: schema
+managed-by: obsidian-mcp
+schema_version: 1.0
+source: references/snaptrade-sdk/api.yaml#/components/schemas/CryptocurrencyPairQuote
+owner: reference
+created: 2025-08-14
+last-updated: 2025-08-14
+---
+
+# CryptocurrencyPairQuote (Schema)
+
+Canonical YAML fragment (extracted from API):
+
+```yaml
+CryptocurrencyPairQuote:
+  type: object
+  required: ["bid", "ask"]
+  properties:
+    bid:
+      description: The highest price a buyer is willing to pay.
+      type: string
+      format: decimal
+      example: "123.45"
+    ask:
+      description: The lowest price a seller is willing to accept.
+      type: string
+      format: decimal
+      example: "123.45"
+    mid:
+      description: The market mid price.
+      type: string
+      format: decimal
+      example: "123.45"
+    timestamp:
+      description: The timestamp of the quote.
+      type: string
+      format: date-time
+      example: 2024-01-24T15:00:00Z
+CryptoOrderPreview:
+  description: Preview of an order.
+  type: object
+  properties:
+    estimated_fee:
+      type: object
+      required: ["currency", "amount"]
+      description: The estimated order fee.
+      properties:
+        currency:
+          $ref: "#/components/schemas/CryptocurrencySymbol"
+        amount:
+          type: string
+          format: decimal
+          example: "123.45"
+OrderUpdatedResponse:
+  type: object
+  required:
+    - brokerage_order_id
+  properties:
+    brokerage_order_id:
+      $ref: "#/components/schemas/BrokerageOrderID"
+    order:
+      $ref: "#/components/schemas/AccountOrderRecord"
+CancelOrderResponse:
+  type: object
+  required:
+    - brokerage_order_id
+  properties:
+    brokerage_order_id:
+      $ref: "#/components/schemas/BrokerageOrderID"
+    raw_response:
+      type: object
+      nullable: true
+      description: The raw response from the brokerage.
+      example: {
+        "order_id": "1234567890",
+        "status": "CANCELLED"
+      }
+MlegOrderResponse:
+  type: object
+  required:
+    - brokerage_order_id
+    - orders
+  properties:
+    brokerage_order_id:
+      $ref: "#/components/schemas/BrokerageOrderID"
+    orders:
+      type: array
+      items:
+        $ref: "#/components/schemas/AccountOrderRecord"
+```
+
+## Notes
+- Source: references/snaptrade-sdk/api.yaml#/components/schemas/CryptocurrencyPairQuote
+
+## Backlinks & Code references
+- Domain model: markbot/src/markbot/domain/models.py (CryptocurrencyPairQuote)
