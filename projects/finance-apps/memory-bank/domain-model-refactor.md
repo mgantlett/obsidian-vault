@@ -80,7 +80,32 @@ ManualTradeFormDomain, BacktestRequestForm, OptimizationRequestForm
 - 📈 **Limited Analytics**: Can't perform complex queries on historical data
 - 🏢 **Enterprise Readiness**: Missing audit trails and data lineage
 
-## 🎯 **Unified Architecture Strategy**
+## 🎯 **Unified Architecture Strategy (Updated)**
+
+### **Schema-First Design Foundation**
+- Define all entities in a single YAML schema (`markbot/schemas/unified_domain.yaml`) for readability and maintainability.
+- Build code generators to produce Pydantic, SQLAlchemy, and TypeScript models from the YAML schema.
+
+### **Redis-Based Caching Mechanism**
+- Implement a Redis cache layer for SnapTrade and reference data, supporting TTL, batch sync, and concurrent access.
+- Integrate cache checks and fallback logic in service/infrastructure layers.
+
+### **Migration Strategy**
+- Gradually migrate APIs and frontend to use unified models and Redis cache, with monitoring and rollback strategies.
+
+## 📈 **Expected Benefits**
+- Consistent models across all layers
+- Efficient caching between Markbot and SnapTrade
+- Improved performance, maintainability, and scalability
+
+## 🗺️ **Implementation Roadmap**
+- [x] Create unified YAML schema for domain entities
+- [x] Scaffold code generation pipeline
+- [x] Implement Redis cache layer
+- [x] Install redis Python package via Poetry
+- [ ] Integrate cache logic into service/infrastructure layers
+- [ ] Migrate APIs and frontend to unified models and Redis cache
+
 
 ### **Phase 1: Schema-First Design Foundation**
 
