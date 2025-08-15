@@ -1,0 +1,12 @@
+# Obsidian and OS files
+.obsidian/workspace
+.obsidian/appearance.json
+.obsidian/.trash
+.obsidian/plugins
+.obsidian/plugins-community
+.obsidian/cache
+.DS_Store
+Thumbs.db
+
+# If you keep attachments/cache in a folder
+.vault-cache/

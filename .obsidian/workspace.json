@@ -194,11 +194,12 @@
   },
   "active": "875a4dbe34e6d56c",
   "lastOpenFiles": [
+    "Untitled.md",
+    "projects/finance-apps/models/Account.md",
     "projects/finance-apps/schemas",
     "projects/finance-apps/models/Account.schema.md",
     "projects/finance-apps/models/Position.schema.md",
     "projects/finance-apps/models/Position.md",
-    "projects/finance-apps/models/Account.md",
     "scratch-pad.md",
     "Excalidraw/Drawing 2025-08-14 22.13.38.excalidraw.md",
     "projects/finance-apps/models/AccountBalance.md",
@@ -236,7 +237,6 @@
     "templates/memory-bank",
     "templates/memory-bank-templates",
     "templates/project-setup",
-    "meta/vault-projects",
     "canvas/issue-resolution.canvas",
     "canvas/system-architecture.canvas",
     "canvas/strategy-development.canvas"
